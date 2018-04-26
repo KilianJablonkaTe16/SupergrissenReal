@@ -91,4 +91,41 @@ C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\D
 =======
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\obj\x86\Debug\SpringandeGris.exe
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\obj\x86\Debug\SpringandeGris.pdb
+<<<<<<< HEAD
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\kys.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\soja.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\Block.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\crouch.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\images.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\liten_pausescreen_test.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\liten_shopscreen_test.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\liten_startscreen_test.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\Mario.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\player.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\play_knapp.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\play_looking_test.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\snow123.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SpringandeGris.exe
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SpringandeGris.pdb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\obj\x86\Debug\Basklass test 1.csprojResolveAssemblyReference.cache
+=======
 >>>>>>> 5fdd02e5bf340306e26a6aa6bc7244f0712d81f9
+>>>>>>> 5e4c978db06b9ee1fa4e4c55733667d04e89efe0
