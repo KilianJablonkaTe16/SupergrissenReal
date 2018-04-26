@@ -162,26 +162,26 @@ namespace SpringandeGris
             if (gamestates == Gamestates.inGame)
             {
                 IsMouseVisible = false;
-                gamestates = player.Update();
+                gamestates = player.Update(gameTime);
 
                 camera.Update(player.position);
 
                 foreach (Block block in blocklista)
                 {
-                    block.Update(player);
+                    block.Update(player,gameTime);
                     block.CheckHitboxes(block.ObjectHitbox, player);
                     
                 }
                 foreach(FlyingObjects flyingobjects in flyingblocks)
                 {
-                    flyingobjects.Update(player);
+                    flyingobjects.Update(player,gameTime);
                     flyingobjects.CheckHitboxes(flyingobjects.ObjectHitbox, player);
 
 
                 }
                 foreach(DamageBlock damageblocks in damageblocks)
                 {
-                    damageblocks.Update(player);
+                    damageblocks.Update(player,gameTime);
                     damageblocks.CheckHitboxes(damageblocks.ObjectHitbox, player);
 
                 }
