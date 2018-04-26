@@ -1,0 +1,56 @@
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SpringandeGris.exe
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SpringandeGris.pdb
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\obj\x86\Debug\SpringandeGris.csprojResolveAssemblyReference.cache
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\obj\x86\Debug\SpringandeGris.exe
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\obj\x86\Debug\SpringandeGris.pdb
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\Content\kys.xnb
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\Content\soja.xnb
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\Content\Mario.xnb
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\Content\crouch.xnb
+C:\Users\Gabbe\Source\Repos\hellogais\SpringandeGris\SpringandeGris\bin\Windows\x86\Debug\Content\Mario03.xnb
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\obj\x86\Debug\SpringandeGris.exe
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\obj\x86\Debug\SpringandeGris.pdb
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\crouch.xnb
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\kys.xnb
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\Mario.xnb
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\Mario03.xnb
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\soja.xnb
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SpringandeGris.exe
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SpringandeGris.pdb
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\obj\x86\Debug\SpringandeGris.csprojResolveAssemblyReference.cache
