@@ -12,6 +12,8 @@ namespace SpringandeGris
     class Shopmenu:SuperMenu
     {
 
+        // Ny kommentar. 
+
         //Konstruktorn
         public Shopmenu(Texture2D shopmenuTexture, Texture2D normalButtonTexture, Texture2D lookingButtonTexture)
         {
