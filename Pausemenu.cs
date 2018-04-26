@@ -12,10 +12,10 @@ namespace SpringandeGris
     class Pausemenu:SuperMenu
     {
         //Konstruktorn
-        public Pausemenu(Texture2D pausemenuTexture, Texture2D normalButtonTexture, Texture2D lookingButtonTexture)
+        public Pausemenu(Texture2D pausemenuTexture, Texture2D resumeButton, Texture2D resumeButtonActive, Texture2D leaveButton,Texture2D leaveButtonActive)
         {
-            buttonLista.Add(new SuperButtons(normalButtonTexture, lookingButtonTexture, new Vector2(400, 100)));
-            buttonLista.Add(new SuperButtons(normalButtonTexture, lookingButtonTexture, new Vector2(400, 200)));
+            buttonLista.Add(new SuperButtons(leaveButton, leaveButtonActive, new Vector2(400, 100)));
+            buttonLista.Add(new SuperButtons(resumeButton, resumeButtonActive, new Vector2(400, 250)));
 
             menuTexture = pausemenuTexture;
         }

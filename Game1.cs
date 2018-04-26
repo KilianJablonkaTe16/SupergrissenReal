@@ -34,8 +34,9 @@ namespace SpringandeGris
         Camera camera = new Camera();
         Random rng = new Random();
         Gamestates gamestates = new Gamestates();
-        Texture2D background, startmenuTexture, pausemenuTexture, shopmenuTexture,
-                  playButtonTexture1, playButtonTexture2, flyingsprite;
+        Texture2D background, startmenuTexture, pausemenuTexture, shopmenuTexture, playButton, playButtonActive, shopButton, 
+                  shopButtonActive, exitButton, exitButtonActive, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive, 
+                  buyButton, buyButtonActive, backButton, backButtonActive, flyingsprite;
         Startmenu startmenu;
         Shopmenu shopmenu;
         Pausemenu pausemenu;
@@ -79,18 +80,37 @@ namespace SpringandeGris
             Texture2D damagesprite = Content.Load<Texture2D>("images");
 
 
-            startmenuTexture = Content.Load<Texture2D>("liten_startscreen_test");
+            startmenuTexture = Content.Load<Texture2D>("title_screen_almost");
             shopmenuTexture = Content.Load<Texture2D>("liten_shopscreen_test");
             pausemenuTexture = Content.Load<Texture2D>("liten_pausescreen_test");
-            playButtonTexture1 = Content.Load<Texture2D>("play_knapp");
-            playButtonTexture2 = Content.Load<Texture2D>("play_looking_test");
+
+            playButton = Content.Load<Texture2D>("playButton");
+            playButtonActive = Content.Load<Texture2D>("playButton_active");
+
+            shopButton = Content.Load<Texture2D>("shopButton");
+            shopButtonActive = Content.Load<Texture2D>("shopButton_active");
+
+            exitButton = Content.Load<Texture2D>("exitButton");
+            exitButtonActive = Content.Load<Texture2D>("exitButton_active");
+
+            resumeButton = Content.Load<Texture2D>("resumeButton");
+            resumeButtonActive = Content.Load<Texture2D>("resumeButton_active");
+
+            leaveButton = Content.Load<Texture2D>("leaveButton");
+            leaveButtonActive = Content.Load<Texture2D>("leaveButton_active");
+
+            backButton = Content.Load<Texture2D>("backButton");
+            backButtonActive = Content.Load<Texture2D>("backButton_active");
+
+            buyButton = Content.Load<Texture2D>("buyButton");
+            buyButtonActive = Content.Load<Texture2D>("buyButton_active");
 
 
 
 
-            startmenu = new Startmenu(startmenuTexture, playButtonTexture1, playButtonTexture2);
-            shopmenu = new Shopmenu(shopmenuTexture, playButtonTexture1, playButtonTexture2);
-            pausemenu = new Pausemenu(pausemenuTexture, playButtonTexture1, playButtonTexture2);
+            startmenu = new Startmenu(startmenuTexture, playButton, playButtonActive, shopButton, shopButtonActive, exitButton, exitButtonActive);
+            shopmenu = new Shopmenu(shopmenuTexture, buyButton, buyButtonActive, backButton, backButtonActive);
+            pausemenu = new Pausemenu(pausemenuTexture, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive);
 
 
 

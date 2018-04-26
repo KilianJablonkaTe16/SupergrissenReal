@@ -15,11 +15,11 @@ namespace SpringandeGris
         // Ny kommentar. 
 
         //Konstruktorn
-        public Shopmenu(Texture2D shopmenuTexture, Texture2D normalButtonTexture, Texture2D lookingButtonTexture)
+        public Shopmenu(Texture2D shopmenuTexture, Texture2D buyButton, Texture2D buyButtonActive, Texture2D backButton, Texture2D backButtonActive)
         {
-            buttonLista.Add(new SuperButtons(normalButtonTexture, lookingButtonTexture, new Vector2(50, 150)));
-            buttonLista.Add(new SuperButtons(normalButtonTexture, lookingButtonTexture, new Vector2(50, 250)));
-            buttonLista.Add(new SuperButtons(normalButtonTexture, lookingButtonTexture, new Vector2(50, 350)));
+            buttonLista.Add(new SuperButtons(buyButton, buyButtonActive, new Vector2(50, 100)));
+            buttonLista.Add(new SuperButtons(buyButton, buyButtonActive, new Vector2(50, 250)));
+            buttonLista.Add(new SuperButtons(backButton, backButtonActive, new Vector2(50, 400)));
             menuTexture = shopmenuTexture;
         }
 
