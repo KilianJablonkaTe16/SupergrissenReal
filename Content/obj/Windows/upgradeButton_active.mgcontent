@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/upgradeButton_active.jpg</SourceFile>
-  <SourceTime>2018-04-19T19:37:44.3270256+02:00</SourceTime>
-  <DestFile>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/bin/Windows/upgradeButton_active.xnb</DestFile>
-  <DestTime>2018-04-26T13:33:10.7032467+02:00</DestTime>
+  <SourceFile>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/upgradeButton_active.jpg</SourceFile>
+  <SourceTime>2018-04-26T13:42:40.2713816+02:00</SourceTime>
+  <DestFile>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/bin/Windows/upgradeButton_active.xnb</DestFile>
+  <DestTime>2018-04-26T13:43:25.1829218+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
