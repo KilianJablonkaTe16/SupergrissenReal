@@ -17,10 +17,10 @@ namespace SpringandeGris
        public Texture2D texture, whichTexture, crouchTexture;
        public Vector2 position, velocity;
        float crouchpositiony;
-        public int health = 3;
+       public int health = 3;
        KeyboardState nowbuttonpressed,lastbuttonpressed;
-        
-    
+       public bool ärodödlig = true;
+       public int timer;
 
 
 
@@ -54,10 +54,26 @@ namespace SpringandeGris
         }
 
 
-        public Gamestates Update()
+        public Gamestates Update(GameTime gametime)
         {
+            if (timer < 0)
+            {
+                ärodödlig = false;
 
-           nowbuttonpressed = Keyboard.GetState();
+            }
+            else
+            {
+                timer -= gametime.ElapsedGameTime.Milliseconds;
+            }
+
+
+
+
+
+
+
+
+            nowbuttonpressed = Keyboard.GetState();
 
 
             //crouchpositiony = (position.Y + texture.Height) / 2;

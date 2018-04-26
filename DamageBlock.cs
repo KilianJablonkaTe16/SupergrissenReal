@@ -18,7 +18,7 @@ namespace SpringandeGris
             this.position = position;
         }
 
-        public override void Update(Player player)
+        public override void Update (Player player, GameTime gameTime)
         {
             //Ändrar på playerns position när den träffar översidan av ett objekt
             if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Up)
@@ -27,7 +27,12 @@ namespace SpringandeGris
 
                 player.harhoppat = false;
                 player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
-                player.health--;
+                if (player.ärodödlig == false)
+                {
+                    player.health--;
+                    player.timer = 1000;
+                }
+
 
             }
 
@@ -36,14 +41,22 @@ namespace SpringandeGris
             {
 
                 player.position.Y = ObjectHitbox.Location.X + player.PlayerHitbox.Height;
-                player.health--;
+                if (player.ärodödlig == false)
+                {
+                    player.health--;
+                    player.timer = 1000;
+                }
             }
             else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Left)
             {
 
                 player.position.X = ObjectHitbox.Location.X - player.PlayerHitbox.Width;
                 player.harhoppat = true;
-                player.health--;
+                if (player.ärodödlig == false)
+                {
+                    player.health--;
+                    player.timer = 1000;
+                }
 
             }
 

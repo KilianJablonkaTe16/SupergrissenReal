@@ -70,6 +70,7 @@ C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\D
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\obj\x86\Debug\Basklass test 1.csprojResolveAssemblyReference.cache
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\obj\x86\Debug\SpringandeGris.exe
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\obj\x86\Debug\SpringandeGris.pdb
+<<<<<<< HEAD
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\backButton.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\backButton_active.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\buyButton.xnb
@@ -87,3 +88,7 @@ C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\D
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\upgradeButton.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\upgradeButton_active.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\title_screen_almost.xnb
+=======
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\obj\x86\Debug\SpringandeGris.exe
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\obj\x86\Debug\SpringandeGris.pdb
+>>>>>>> 5fdd02e5bf340306e26a6aa6bc7244f0712d81f9

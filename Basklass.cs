@@ -52,7 +52,7 @@ namespace SpringandeGris
 
 
 
-         virtual public void Update(Player player)
+         virtual public void Update(Player player, GameTime gameTime)
         {
 
             //Ändrar på playerns position när den träffar översidan av ett objekt
