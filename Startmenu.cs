@@ -11,11 +11,11 @@ namespace SpringandeGris
         public bool exitGame = false;
 
         //Konstruktorn
-        public Startmenu(Texture2D startmenu, Texture2D normalButtonTexture, Texture2D lookingButtonTexture)
+        public Startmenu(Texture2D startmenu, Texture2D playButton, Texture2D playButtonActive, Texture2D shopButton, Texture2D shopButtonActive, Texture2D exitButton, Texture2D exitButtonActive)
         {
-            buttonLista.Add(new SuperButtons(normalButtonTexture, lookingButtonTexture, new Vector2(50, 100)));
-            buttonLista.Add(new SuperButtons(normalButtonTexture, lookingButtonTexture, new Vector2(50, 200)));
-            buttonLista.Add(new SuperButtons(normalButtonTexture, lookingButtonTexture, new Vector2(50, 300)));
+            buttonLista.Add(new SuperButtons(playButton, playButtonActive, new Vector2(50, 100)));
+            buttonLista.Add(new SuperButtons(shopButton, shopButtonActive, new Vector2(50, 250)));
+            buttonLista.Add(new SuperButtons(exitButton, exitButtonActive, new Vector2(50, 400)));
 
             menuTexture = startmenu;
         }
