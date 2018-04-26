@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+<<<<<<< HEAD
     <File>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/Mario.png</File>
     <File>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/crouch.png</File>
     <File>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/player.png</File>
@@ -32,5 +33,35 @@
     <File>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/upgradeButton.jpg</File>
     <File>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/upgradeButton_active.jpg</File>
     <File>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/title_screen_almost.jpg</File>
+=======
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/Mario.png</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/crouch.png</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/player.png</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/Block.png</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/liten_pausescreen_test.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/liten_shopscreen_test.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/liten_startscreen_test.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/play_knapp.png</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/play_looking_test.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/snow123.png</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/images.png</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/backButton.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/backButton_active.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/buyButton.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/buyButton_active.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/exitButton.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/exitButton_active.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/leaveButton.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/leaveButton_active.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/playButton.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/playButton_active.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/resumeButton.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/resumeButton_active.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/shopButton.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/shopButton_active.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/upgradeButton.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/upgradeButton_active.jpg</File>
+    <File>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/title_screen_almost.jpg</File>
+>>>>>>> cf2617f3356dce57b9679ea2156e394af8687378
   </SourceFiles>
 </SourceFileCollection>
