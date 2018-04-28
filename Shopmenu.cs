@@ -11,19 +11,18 @@ namespace SpringandeGris
 {
     class Shopmenu:SuperMenu
     {
-
-        // Ny kommentar. 
+        protected int coins = 200, upgradeJump = 1, upgradeSpeed = 1;
 
         //Konstruktorn
         public Shopmenu(Texture2D shopmenuTexture, Texture2D buyButton, Texture2D buyButtonActive, Texture2D backButton, Texture2D backButtonActive)
         {
-            buttonLista.Add(new SuperButtons(buyButton, buyButtonActive, new Vector2(50, 100)));
-            buttonLista.Add(new SuperButtons(buyButton, buyButtonActive, new Vector2(50, 250)));
-            buttonLista.Add(new SuperButtons(backButton, backButtonActive, new Vector2(50, 400)));
+            buttonLista.Add(new SuperButtons(buyButton, buyButtonActive, new Vector2(50, 150)));
+            buttonLista.Add(new SuperButtons(buyButton, buyButtonActive, new Vector2(50, 300)));
+            buttonLista.Add(new SuperButtons(backButton, backButtonActive, new Vector2(50, 450)));
             menuTexture = shopmenuTexture;
         }
 
-        public Gamestates Update()
+        public Gamestates Update(Player player)
         {
             // Vad metoden gör beskirvs i SuperMenus.
             GettingNewValues();
@@ -52,6 +51,19 @@ namespace SpringandeGris
                     if (buttonLista[2].MouseOnButton() == ButtonLook.clickingButton)
                     {
                         return Gamestates.startmenu;
+                    }
+
+                    if (buttonLista[0].MouseOnButton() == ButtonLook.clickingButton && lastMouseState != nowMouseState && lastMouseState.Position == nowMouseState.Position)
+                    {
+                        coins -= 100;
+                        upgradeJump++;
+                    }
+
+                    if (buttonLista[1].MouseOnButton() == ButtonLook.clickingButton && lastMouseState != nowMouseState && lastMouseState.Position == nowMouseState.Position)
+                    {
+                        coins -= 100;
+                        upgradeSpeed++;
+                        player.velocity.X++;
                     }
 
                     lastMouseState = nowMouseState;
@@ -89,6 +101,20 @@ namespace SpringandeGris
                 buttonLista[valdKnapp].Update(ButtonLook.lookingButton);
             }
 
+            if (Keyboard.GetState().IsKeyDown(Keys.Enter) && valdKnapp == 0 && lastButtonState != nowButtonState)
+            {
+                coins -= 100;
+                upgradeJump++;
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Enter) && valdKnapp == 1 && lastButtonState != nowButtonState)
+            {
+                player.velocity.X++;
+                coins -= 100;
+                upgradeSpeed++;
+            }
+
+
             // Nedan ändras gamstatsen beroende på vilken knapp man "aktiverar"
             #region Gamestates retunering
             if (Keyboard.GetState().IsKeyDown(Keys.Enter) && valdKnapp == 2 && lastButtonState != nowButtonState)
@@ -103,6 +129,20 @@ namespace SpringandeGris
                 return Gamestates.shopmenu;
             }
             #endregion
+
+        }
+
+        public void Draw(SpriteBatch spriteBatch, SpriteFont buyJump)
+        {
+            spriteBatch.Draw(menuTexture, Vector2.Zero, Color.White);
+
+            foreach (SuperButtons pauseButton in buttonLista)
+            {
+                pauseButton.Draw(spriteBatch);
+            }
+            spriteBatch.DrawString(buyJump, "Jumpheight: " + upgradeJump.ToString(), new Vector2(600, 150), Color.White);
+            spriteBatch.DrawString(buyJump, "Runningspeed: " + upgradeSpeed.ToString(), new Vector2(600, 300), Color.White);
+            spriteBatch.DrawString(buyJump, "Coins: " + coins.ToString(), new Vector2(600, 25), Color.White);
         }
 
     }

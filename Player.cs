@@ -15,8 +15,8 @@ namespace SpringandeGris
 
        public bool harhoppat;
        public Texture2D texture, whichTexture, crouchTexture;
-       public Vector2 position, velocity;
-       float crouchpositiony;
+       public Vector2 position, velocity, center;
+       float crouchpositiony, rotation, pirotation;
        public int health = 3;
        KeyboardState nowbuttonpressed,lastbuttonpressed;
        public bool ärodödlig = true;
@@ -36,6 +36,7 @@ namespace SpringandeGris
             velocity = new Vector2(3, 0);
             harhoppat = false;
             whichTexture = texture;
+            center = new Vector2(texture.Height / 2, texture.Width / 2);
 
         }
 
@@ -66,7 +67,18 @@ namespace SpringandeGris
                 timer -= gametime.ElapsedGameTime.Milliseconds;
             }
 
+            if (velocity.X >= 20)
+            {
+                if (velocity.X >= 20)
+                    pirotation = -25;
 
+                if (velocity.X >= 30)
+                    pirotation = -15;
+
+                if (velocity.X >= 40)
+                    pirotation = -5;
+                rotation -= MathHelper.TwoPi / pirotation;
+            }
 
 
 
@@ -148,7 +160,7 @@ namespace SpringandeGris
     public void Draw(SpriteBatch spriteBatch)
         {
 
-            spriteBatch.Draw(whichTexture, position, Color.White);
+            spriteBatch.Draw(whichTexture, position, null, Color.White, rotation, center, 1, SpriteEffects.None, 1);
         }
     }
 

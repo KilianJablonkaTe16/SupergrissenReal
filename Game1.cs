@@ -27,6 +27,7 @@ namespace SpringandeGris
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SpriteFont buyJump;
         List<Block> blocklista = new List<Block>();
         List<FlyingObjects> flyingblocks = new List<FlyingObjects>();
         List<DamageBlock> damageblocks = new List<DamageBlock>();
@@ -105,7 +106,7 @@ namespace SpringandeGris
             buyButton = Content.Load<Texture2D>("buyButton");
             buyButtonActive = Content.Load<Texture2D>("buyButton_active");
 
-
+            buyJump = Content.Load<SpriteFont>("BuyJump");
 
 
             startmenu = new Startmenu(startmenuTexture, playButton, playButtonActive, shopButton, shopButtonActive, exitButton, exitButtonActive);
@@ -244,7 +245,7 @@ namespace SpringandeGris
             if (gamestates == Gamestates.shopmenu)
             {
                 IsMouseVisible = true;
-                gamestates = shopmenu.Update();
+                gamestates = shopmenu.Update(player);
             }
 
 
@@ -277,7 +278,7 @@ namespace SpringandeGris
             if (gamestates == Gamestates.shopmenu)
             {
                 spriteBatch.Begin();
-                shopmenu.Draw(spriteBatch);
+                shopmenu.Draw(spriteBatch, buyJump);
                 spriteBatch.End();
             }
 
