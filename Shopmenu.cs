@@ -57,6 +57,7 @@ namespace SpringandeGris
                     {
                         coins -= 100;
                         upgradeJump++;
+                        player.sonicJump--;
                     }
 
                     if (buttonLista[1].MouseOnButton() == ButtonLook.clickingButton && lastMouseState != nowMouseState && lastMouseState.Position == nowMouseState.Position)

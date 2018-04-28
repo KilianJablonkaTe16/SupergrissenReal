@@ -16,7 +16,8 @@ namespace SpringandeGris
        public bool harhoppat;
        public Texture2D texture, whichTexture, crouchTexture;
        public Vector2 position, velocity, center;
-       float crouchpositiony, rotation, pirotation;
+       float crouchpositiony, rotation, sonicSpeed;
+       public float sonicJump;
        public int health = 3;
        KeyboardState nowbuttonpressed,lastbuttonpressed;
        public bool ärodödlig = true;
@@ -37,6 +38,7 @@ namespace SpringandeGris
             harhoppat = false;
             whichTexture = texture;
             center = new Vector2(texture.Height / 2, texture.Width / 2);
+            sonicJump = -19;
 
         }
 
@@ -70,14 +72,14 @@ namespace SpringandeGris
             if (velocity.X >= 20)
             {
                 if (velocity.X >= 20)
-                    pirotation = -25;
+                    sonicSpeed = -25;
 
                 if (velocity.X >= 30)
-                    pirotation = -15;
+                    sonicSpeed = -15;
 
                 if (velocity.X >= 40)
-                    pirotation = -5;
-                rotation -= MathHelper.TwoPi / pirotation;
+                    sonicSpeed = -5;
+                rotation -= MathHelper.TwoPi / sonicSpeed;
             }
 
 
@@ -100,7 +102,7 @@ namespace SpringandeGris
             {
                 // velocity.Y = -3;
                 //position.Y -= 8f;
-                velocity.Y = -19f;
+                velocity.Y = sonicJump;
                 harhoppat = true;
                 
             }
