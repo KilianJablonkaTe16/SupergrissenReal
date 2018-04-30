@@ -43,6 +43,8 @@ namespace SpringandeGris
         Pausemenu pausemenu;
         Player player;
         int timer;
+        Vector2 backgroundTest;
+        float backgroundWidth;
 
 
 
@@ -79,7 +81,9 @@ namespace SpringandeGris
             Texture2D objectSprite = Content.Load<Texture2D>("Block");
              flyingsprite = Content.Load<Texture2D>("snow123");
             Texture2D damagesprite = Content.Load<Texture2D>("images");
-
+            background = Content.Load<Texture2D>("Forest-31");
+            backgroundWidth = background.Width;
+            backgroundTest = new Vector2(0, 0);
 
             startmenuTexture = Content.Load<Texture2D>("title_screen_almost");
             shopmenuTexture = Content.Load<Texture2D>("liten_shopscreen_test");
@@ -286,6 +290,13 @@ namespace SpringandeGris
             {
                 spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.ViewMatrix);
 
+                for (float i = 0; i < 100; i++)
+                {
+                    spriteBatch.Draw(background, backgroundTest, Color.White);
+                    backgroundTest = new Vector2(backgroundWidth * i, 0);
+                }
+
+
                 player.Draw(spriteBatch);
                 foreach (Block block in blocklista)
                 {
@@ -299,7 +310,6 @@ namespace SpringandeGris
                 {
                     damageblocks.Draw(spriteBatch);
                 }
-
                 spriteBatch.End();
             }
 
