@@ -49,7 +49,7 @@ namespace SpringandeGris
                     //=================================================================================================================
                     if (buttonLista[0].MouseOnButton() == ButtonLook.clickingButton)
                     {
-                        return Gamestates.inGame;
+                        return Gamestates.levelmenu;
                     }
 
                     if (buttonLista[1].MouseOnButton() == ButtonLook.clickingButton)
@@ -111,7 +111,7 @@ namespace SpringandeGris
             if (Keyboard.GetState().IsKeyDown(Keys.Enter) && valdKnapp == 0)
             {
                 ResetingButtos();
-                return Gamestates.inGame;
+                return Gamestates.levelmenu;
             }
 
             else if (Keyboard.GetState().IsKeyDown(Keys.Enter) && valdKnapp == 1)

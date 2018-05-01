@@ -15,7 +15,7 @@ namespace SpringandeGris
     /// 
 
 
-    enum Gamestates { inGame, startmenu, pausemenu, shopmenu, deathscreen, exitgame }
+    enum Gamestates { inGame, startmenu, pausemenu, shopmenu, levelmenu, deathscreen, exitgame }
 
 
 
@@ -23,30 +23,40 @@ namespace SpringandeGris
     {
         //Samuel har gjort game
 
-        public static Vector2 gravity;
-
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
-        SpriteFont buyJump;
-        List<Block> blocklista = new List<Block>();
-        List<FlyingObjects> flyingblocks = new List<FlyingObjects>();
-        List<DamageBlock> damageblocks = new List<DamageBlock>();
-        int positionx;
-        Camera camera = new Camera();
-        Random rng = new Random();
         Gamestates gamestates = new Gamestates();
-        Texture2D background, startmenuTexture, pausemenuTexture, shopmenuTexture, playButton, playButtonActive, shopButton, 
-                  shopButtonActive, exitButton, exitButtonActive, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive, 
-                  buyButton, buyButtonActive, backButton, backButtonActive, flyingsprite;
+
+        //Instanser av klasser
+        #region Klassinstanser
         Startmenu startmenu;
         Shopmenu shopmenu;
         Pausemenu pausemenu;
         Player player;
-        int timer;
+        LevelMenu levelMenu;
+        #endregion
+
+        //Klasslistor
+        #region Klasslistor
+        List<Block> blocklista = new List<Block>();
+        List<FlyingObjects> flyingblocks = new List<FlyingObjects>();
+        List<DamageBlock> damageblocks = new List<DamageBlock>();
+        #endregion
+
+
+        GraphicsDeviceManager graphics;
+        SpriteBatch spriteBatch;
+        SpriteFont buyJump;
+
+        Camera camera = new Camera();
+        Random rng = new Random();
+
+        Texture2D background, startmenuTexture, pausemenuTexture, shopmenuTexture, playButton, playButtonActive, shopButton, 
+                  shopButtonActive, exitButton, exitButtonActive, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive, 
+                  buyButton, buyButtonActive, backButton, backButtonActive, flyingsprite, level1Texture, level2Texture, 
+                  level3Texture, level4Texture;
         Vector2 backgroundTest;
         float backgroundWidth;
-
-
+        int timer;
+        int positionx;
 
 
 
@@ -66,29 +76,35 @@ namespace SpringandeGris
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            //Lägger till gravition.
-            gravity = new Vector2(0, 0.9f);
 
             graphics.PreferredBackBufferWidth = GraphicsDevice.DisplayMode.Width;
             graphics.PreferredBackBufferHeight = GraphicsDevice.DisplayMode.Height;
             graphics.IsFullScreen = false;
             graphics.ApplyChanges();
 
-            gamestates = Gamestates.startmenu;
+            gamestates = Gamestates.levelmenu;
+
+            // Inladning av alla textures
+            #region Inladning av textures
 
             Texture2D playerSprite = Content.Load<Texture2D>("player");
             Texture2D playerCrouch = Content.Load<Texture2D>("Crouch");
             Texture2D objectSprite = Content.Load<Texture2D>("Block");
-             flyingsprite = Content.Load<Texture2D>("snow123");
+            flyingsprite = Content.Load<Texture2D>("snow123");
             Texture2D damagesprite = Content.Load<Texture2D>("images");
             background = Content.Load<Texture2D>("Forest-31");
             backgroundWidth = background.Width;
             backgroundTest = new Vector2(0, 0);
 
+            //Meny bakgrunder
+            #region Meny Bakgrunder
             startmenuTexture = Content.Load<Texture2D>("title_screen_almost");
             shopmenuTexture = Content.Load<Texture2D>("liten_shopscreen_test");
             pausemenuTexture = Content.Load<Texture2D>("liten_pausescreen_test");
+            #endregion
 
+            //Alla knappterturers
+            #region Knapptexturers
             playButton = Content.Load<Texture2D>("playButton");
             playButtonActive = Content.Load<Texture2D>("playButton_active");
 
@@ -110,36 +126,34 @@ namespace SpringandeGris
             buyButton = Content.Load<Texture2D>("buyButton");
             buyButtonActive = Content.Load<Texture2D>("buyButton_active");
 
-            buyJump = Content.Load<SpriteFont>("BuyJump");
+            level1Texture = Content.Load<Texture2D>("level-1");
+            level2Texture = Content.Load<Texture2D>("level-2");
+            level3Texture = Content.Load<Texture2D>("level-3");
+            level4Texture = Content.Load<Texture2D>("level-4");
+            #endregion
 
+            buyJump = Content.Load<SpriteFont>("BuyJump");
+            #endregion
 
             startmenu = new Startmenu(startmenuTexture, playButton, playButtonActive, shopButton, shopButtonActive, exitButton, exitButtonActive);
             shopmenu = new Shopmenu(shopmenuTexture, buyButton, buyButtonActive, backButton, backButtonActive);
+            levelMenu = new LevelMenu(level1Texture, level2Texture, level3Texture, level4Texture);
             pausemenu = new Pausemenu(pausemenuTexture, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive);
-
-
-
-            timer = 300;
             player = new Player(playerSprite, playerCrouch);
+
+
+            // Vad är den här till för?
+            timer = 300;
             
+                       
             //Lägger till 10 blocks på rad med ett avstånd mellan varandra som är bredden på objektet.
             for (int i = 0; i < 1000; i++)
             {
-
-                
-
-
                 blocklista.Add(new Block(objectSprite, new Vector2(positionx, 100)));
                 
-
-
                 damageblocks.Add(new DamageBlock(damagesprite, new Vector2(positionx, 424)));
 
                 positionx += blocklista[i].ObjectHitbox.Width + 200;
-
-
-
-
             }
 
 
@@ -184,7 +198,11 @@ namespace SpringandeGris
             // De olika if-satserna  nedan som anroppar de olika "Update" metoderna 
             // är till för att när man till exempel spelaren inte ska fortsätta springa runt 
             // när man har pausat spelet.  
+
+
+            //Kör "testleveln och playern"
             if (gamestates == Gamestates.inGame)
+            #region Allt i test level och player
             {
                 IsMouseVisible = false;
                 gamestates = player.Update(gameTime);
@@ -221,16 +239,17 @@ namespace SpringandeGris
                 {
                     timer -= gameTime.ElapsedGameTime.Milliseconds;
                 }
-                  
-
-
             }
+            #endregion
 
+            //Lämnar spelet
             if (gamestates == Gamestates.exitgame)
             {
                 Exit();
             }
 
+
+            //Visar start menyn
             if (gamestates == Gamestates.startmenu)
             {
                 IsMouseVisible = true;
@@ -239,6 +258,16 @@ namespace SpringandeGris
                     Exit();
             }
 
+
+            //Visar level menyn
+            if (gamestates == Gamestates.levelmenu)
+            {
+                IsMouseVisible = true;
+                gamestates = levelMenu.Update();
+            }
+
+
+            //Visar paus menyn 
             if (gamestates == Gamestates.pausemenu)
             {
                 IsMouseVisible = true;
@@ -246,13 +275,12 @@ namespace SpringandeGris
             }
 
 
+            //Visar shop menyn
             if (gamestates == Gamestates.shopmenu)
             {
                 IsMouseVisible = true;
                 gamestates = shopmenu.Update(player);
             }
-
-
 
 
             // TODO: Add your update logic here
@@ -265,17 +293,21 @@ namespace SpringandeGris
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-
-           
-
-           
+            GraphicsDevice.Clear(Color.CornflowerBlue);          
 
             // De olika "Draw" metoderna nedan anroppas beroende på i vilken gamestate man är. 
             if (gamestates == Gamestates.startmenu)
             {
                 spriteBatch.Begin();
                 startmenu.Draw(spriteBatch);
+                spriteBatch.End();
+            }
+
+
+            if(gamestates == Gamestates.levelmenu)
+            {
+                spriteBatch.Begin();
+                levelMenu.Draw(spriteBatch);
                 spriteBatch.End();
             }
 
@@ -286,7 +318,9 @@ namespace SpringandeGris
                 spriteBatch.End();
             }
 
+
             if (gamestates == Gamestates.inGame)
+            #region InGame Draw
             {
                 spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.ViewMatrix);
 
@@ -312,6 +346,8 @@ namespace SpringandeGris
                 }
                 spriteBatch.End();
             }
+            #endregion
+            
 
             if (gamestates == Gamestates.pausemenu)
             {
@@ -319,8 +355,6 @@ namespace SpringandeGris
                 pausemenu.Draw(spriteBatch);
                 spriteBatch.End();
             }
-
-            spriteBatch.End();
 
             // TODO: Add your drawing code here
 
