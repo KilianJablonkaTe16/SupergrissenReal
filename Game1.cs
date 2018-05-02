@@ -88,9 +88,9 @@ namespace SpringandeGris
 
             Texture2D playerSprite = Content.Load<Texture2D>("player");
             Texture2D playerCrouch = Content.Load<Texture2D>("Crouch");
-            Texture2D objectSprite = Content.Load<Texture2D>("Block");
+            Texture2D objectSprite = Content.Load<Texture2D>("grasBlock_100x60");
             flyingsprite = Content.Load<Texture2D>("snow123");
-            Texture2D damagesprite = Content.Load<Texture2D>("images");
+            Texture2D damagesprite = Content.Load<Texture2D>("flyingGrasBlock_100x30");
             background = Content.Load<Texture2D>("Forest-31");
             backgroundWidth = background.Width;
             backgroundTest = new Vector2(0, 0);
