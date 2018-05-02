@@ -25,23 +25,6 @@ namespace SpringandeGris
 
         Gamestates gamestates = new Gamestates();
 
-        //Instanser av klasser
-        #region Klassinstanser
-        Startmenu startmenu;
-        Shopmenu shopmenu;
-        Pausemenu pausemenu;
-        Player player;
-        LevelMenu levelMenu;
-        #endregion
-
-        //Klasslistor
-        #region Klasslistor
-        List<Block> blocklista = new List<Block>();
-        List<FlyingObjects> flyingblocks = new List<FlyingObjects>();
-        List<DamageBlock> damageblocks = new List<DamageBlock>();
-        #endregion
-
-
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         SpriteFont buyJump;
@@ -57,6 +40,22 @@ namespace SpringandeGris
         float backgroundWidth;
         int timer;
         int positionx;
+
+        //Instanser av klasser
+        #region Klassinstanser
+        Startmenu startmenu;
+        Shopmenu shopmenu;
+        Pausemenu pausemenu;
+        Player player;
+        LevelMenu levelMenu;
+        #endregion
+
+        //Klasslistor
+        #region Klasslistor
+        List<Block> blocklista = new List<Block>();
+        List<FlyingObjects> flyingblocks = new List<FlyingObjects>();
+        List<DamageBlock> damageblocks = new List<DamageBlock>();
+        #endregion
 
 
 
@@ -82,7 +81,7 @@ namespace SpringandeGris
             graphics.IsFullScreen = false;
             graphics.ApplyChanges();
 
-            gamestates = Gamestates.levelmenu;
+            gamestates = Gamestates.startmenu;
 
             // Inladning av alla textures
             #region Inladning av textures

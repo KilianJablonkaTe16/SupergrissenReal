@@ -9,8 +9,11 @@ using Microsoft.Xna.Framework.Input;
 
 namespace SpringandeGris
 {
-    class LevelButtons:SuperButtons
+    class LevelButtons
     {
+        //public LevelButtons(Texture2D level1, Texture2D level2, Texture2D level3, Texture2D level4)
+        //{
 
+        //}
     }
 }

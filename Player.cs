@@ -15,7 +15,7 @@ namespace SpringandeGris
 
        public bool harhoppat;
        public Texture2D texture, whichTexture, crouchTexture;
-       public Vector2 position, velocity, center;
+       public Vector2 position, velocity, center, gravity;
        float crouchpositiony, rotation, sonicSpeed;
        public float sonicJump;
        public int health = 3;
@@ -39,7 +39,7 @@ namespace SpringandeGris
             whichTexture = texture;
             center = new Vector2(texture.Height / 2, texture.Width / 2);
             sonicJump = -19;
-
+            gravity = new Vector2(0, 0.9f);
         }
 
         public Rectangle PlayerHitbox
@@ -93,7 +93,7 @@ namespace SpringandeGris
             //crouchpositiony = (position.Y + texture.Height) / 2;
 
             //Gravitation
-            velocity += Game1.gravity;
+            velocity += gravity;
             //Playern rör sig
             position += velocity;
           
