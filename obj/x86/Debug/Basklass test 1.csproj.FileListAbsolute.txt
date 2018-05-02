@@ -144,3 +144,11 @@ C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\D
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\title_screen_almost.xnb
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\upgradeButton.xnb
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\upgradeButton_active.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\BuyJump.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\öö.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\grisTexture.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\Forest-31.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-1.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-2.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-3.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-4.xnb

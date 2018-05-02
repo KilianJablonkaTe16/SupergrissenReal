@@ -16,6 +16,7 @@ namespace SpringandeGris
         {
             this.texture = texture;
             this.position = position;
+
         }
 
         public override void Update (Player player, GameTime gameTime)

@@ -14,13 +14,14 @@ namespace SpringandeGris
         protected Texture2D menuTexture;
         protected KeyboardState nowButtonState, lastButtonState;
         protected MouseState nowMouseState, lastMouseState;
+        protected SpriteFont buyJump;
 
         protected bool keysUsed = false;
         protected int valdKnapp = -1, gammalValdKnapp = -1;
 
 
         // Draw metoden som alla menyerna använder.
-        public void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(menuTexture, Vector2.Zero, Color.White);
 

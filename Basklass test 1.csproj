@@ -47,10 +47,14 @@
     <Compile Include="FlyingObjects.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Block.cs" />
+    <Compile Include="LevelButtons.cs" />
+    <Compile Include="LevelMenu.cs" />
+    <Compile Include="LevelOneTest.cs" />
     <Compile Include="Pausemenu.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopButton.cs" />
     <Compile Include="Shopmenu.cs" />
     <Compile Include="Startmenu.cs" />
     <Compile Include="SuperButtons.cs" />

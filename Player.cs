@@ -15,8 +15,9 @@ namespace SpringandeGris
 
        public bool harhoppat;
        public Texture2D texture, whichTexture, crouchTexture;
-       public Vector2 position, velocity;
-       float crouchpositiony;
+       public Vector2 position, velocity, center, gravity;
+       float crouchpositiony, rotation, sonicSpeed;
+       public float sonicJump;
        public int health = 3;
        KeyboardState nowbuttonpressed,lastbuttonpressed;
        public bool ärodödlig = true;
@@ -36,7 +37,9 @@ namespace SpringandeGris
             velocity = new Vector2(3, 0);
             harhoppat = false;
             whichTexture = texture;
-
+            center = new Vector2(texture.Height / 2, texture.Width / 2);
+            sonicJump = -19;
+            gravity = new Vector2(0, 0.9f);
         }
 
         public Rectangle PlayerHitbox
@@ -66,7 +69,18 @@ namespace SpringandeGris
                 timer -= gametime.ElapsedGameTime.Milliseconds;
             }
 
+            if (velocity.X >= 20)
+            {
+                if (velocity.X >= 20)
+                    sonicSpeed = -25;
 
+                if (velocity.X >= 30)
+                    sonicSpeed = -15;
+
+                if (velocity.X >= 40)
+                    sonicSpeed = -5;
+                rotation -= MathHelper.TwoPi / sonicSpeed;
+            }
 
 
 
@@ -79,7 +93,7 @@ namespace SpringandeGris
             //crouchpositiony = (position.Y + texture.Height) / 2;
 
             //Gravitation
-            velocity += Game1.gravity;
+            velocity += gravity;
             //Playern rör sig
             position += velocity;
           
@@ -88,7 +102,7 @@ namespace SpringandeGris
             {
                 // velocity.Y = -3;
                 //position.Y -= 8f;
-                velocity.Y = -19f;
+                velocity.Y = sonicJump;
                 harhoppat = true;
                 
             }
@@ -148,7 +162,7 @@ namespace SpringandeGris
     public void Draw(SpriteBatch spriteBatch)
         {
 
-            spriteBatch.Draw(whichTexture, position, Color.White);
+            spriteBatch.Draw(whichTexture, position, null, Color.White, rotation, center, 1, SpriteEffects.None, 1);
         }
     }
 
