@@ -21,7 +21,7 @@ namespace SpringandeGris
             for (int i = 0; i < 10; i++)
             {
 
-                Game1.Objekten.Add(new Block(Game1.objectSprite, new Vector2(player.position.X + Game1.rng.Next(100,10000), 100)));
+                Game1.Objekten.Add(new Block(Game1.objectSprite, new Vector2(player.position.X + Game1.rng.Next(100,10000), Game1.rng.Next(player.position.X + player.PlayerHitbox.Height - 50, player.position.X + player.PlayerHitbox.Height + 50))));
 
                 Game1.Objekten.Add(new DamageBlock(Game1.damagesprite, new Vector2(positionx, 424)));
 
