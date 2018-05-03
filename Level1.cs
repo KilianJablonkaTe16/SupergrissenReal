@@ -14,7 +14,7 @@ namespace SpringandeGris
     {
         
         static int  timer = 300;
-        int positionx = 0;
+        int positionx = 100;
         public Level1(Player  player)
         {
            
@@ -25,7 +25,7 @@ namespace SpringandeGris
 
                 Game1.Objekten.Add(new DamageBlock(Game1.damagesprite, new Vector2(positionx, 424)));
 
-                positionx += Game1.Objekten[i].ObjectHitbox.Width;
+                positionx += 200;
             }
             
 
@@ -43,7 +43,7 @@ namespace SpringandeGris
             //Annars så tar den timerns värde minus hur lång tid som har gått.
             if (timer < 0)
             {
-                Game1.Objekten.Add(new FlyingObjects(Game1.flyingsprite, new Vector2(15000, Game1.rng.Next(100, 300))));
+                Game1.Objekten.Add(new FlyingObjects(Game1.flyingsprite, new Vector2(30000, Game1.rng.Next(100, 300))));
                 timer = Game1.rng.Next(3000, 4000);
             }
             else
