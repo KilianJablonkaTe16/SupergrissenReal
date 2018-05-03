@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\backButton.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\backButton_active.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\Block.xnb
@@ -61,8 +62,38 @@ C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\obj\x86\Debug\Spr
 =======
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\obj\x86\Debug\SpringandeGris.exe
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\obj\x86\Debug\SpringandeGris.pdb
+=======
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\backButton.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\backButton_active.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\buyButton.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\buyButton_active.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\BuyJump.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\exitButton.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\exitButton_active.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\flyingGrasBlock_100x30.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\Forest-31.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\grasBlock_100x60.xnb
+>>>>>>> 176a444a806e07727f6603c5fe4e5b8ab2af8c9f
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\kys.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\leaveButton.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\leaveButton_active.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\level-1-zoom.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\level-1.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\level-2.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\level-3.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\level-4.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\levelmeny_bakgrund.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\levelmeny_bakgrund_utan.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\playButton.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\playButton_active.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\resumeButton.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\resumeButton_active.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\shopButton.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\shopButton_active.xnb
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\soja.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\title_screen_almost.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\upgradeButton.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\upgradeButton_active.xnb
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\Block.xnb
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\crouch.xnb
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\images.xnb
@@ -95,6 +126,7 @@ C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\D
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.XInput.xml
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\obj\x86\Debug\Basklass test 1.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 >>>>>>> 5fdd02e5bf340306e26a6aa6bc7244f0712d81f9
 >>>>>>> 5e4c978db06b9ee1fa4e4c55733667d04e89efe0
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\backButton.xnb
@@ -130,3 +162,8 @@ C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\D
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\levelmeny_bakgrund.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\levelmeny_bakgrund_utan.xnb
 >>>>>>> b06bb1bfe2c6369b044cbe6e72074c6c0d7efb15
+=======
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\obj\x86\Debug\SpringandeGris.exe
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\obj\x86\Debug\SpringandeGris.pdb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\JUMP.xnb
+>>>>>>> 176a444a806e07727f6603c5fe4e5b8ab2af8c9f
