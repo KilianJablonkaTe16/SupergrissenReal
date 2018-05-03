@@ -86,7 +86,7 @@ namespace SpringandeGris
             // Inladning av alla textures
             #region Inladning av textures
 
-            Texture2D playerSprite = Content.Load<Texture2D>("player");
+            Texture2D playerSprite = Content.Load<Texture2D>("piggy");
             Texture2D playerCrouch = Content.Load<Texture2D>("Crouch");
 
 
@@ -145,15 +145,7 @@ namespace SpringandeGris
             levelMenu = new LevelMenu(levelmenuBackground, backButton, backButtonActive);
             pausemenu = new Pausemenu(pausemenuTexture, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive);
             player = new Player(playerSprite, playerCrouch);
-
-
             
-            
-            
-                       
-
-
-
             base.Initialize();
         }
 
