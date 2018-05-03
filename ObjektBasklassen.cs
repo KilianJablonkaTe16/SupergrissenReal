@@ -83,6 +83,13 @@ namespace SpringandeGris
                
 
             }
+            else if(ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Right)
+            {
+                player.position.X = ObjectHitbox.Location.X + player.PlayerHitbox.Width;
+                player.harhoppat = true;
+
+
+            }
             
         
             
@@ -106,6 +113,12 @@ namespace SpringandeGris
             {
                 hitboxes = Hitboxes.Left;
                 return Hitboxes.Left;
+            }
+            else if(player.PlayerHitbox.Intersects(new Rectangle(collision.X + ObjectHitbox.Width, collision.Y, ObjectHitbox.Width, ObjectHitbox.Height)))
+            {
+                hitboxes = Hitboxes.Right;
+                return Hitboxes.Right;
+
             }
             else if (player.PlayerHitbox.Intersects(new Rectangle(collision.X, collision.Y - ObjectHitbox.Height, ObjectHitbox.Width, ObjectHitbox.Height)))
             {

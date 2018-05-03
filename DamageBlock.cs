@@ -64,6 +64,17 @@ namespace SpringandeGris
                 }
 
             }
+            else if(ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Right)
+            {
+                player.position.X = ObjectHitbox.Location.X + player.PlayerHitbox.Width;
+                player.harhoppat = true;
+                player.health--;
+                if(player.ärodödlig == false)
+                {
+                    player.timer = 1000;
+                }
+
+            }
 
 
         }
