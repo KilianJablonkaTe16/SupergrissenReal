@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/resumeButton_active.jpg</SourceFile>
-  <SourceTime>2018-04-19T19:36:07.748871+02:00</SourceTime>
+  <SourceTime>2018-05-03T14:20:23.0447004+02:00</SourceTime>
   <DestFile>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/bin/Windows/resumeButton_active.xnb</DestFile>
-  <DestTime>2018-05-03T13:50:26.1309032+02:00</DestTime>
+  <DestTime>2018-05-03T14:20:44.5168285+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
