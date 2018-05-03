@@ -22,7 +22,7 @@ namespace SpringandeGris
 
     public class Game1 : Game
     {
-        public static SoundEffect effect;
+        SoundEffect effect;
         //Samuel har gjort game
 
         Gamestates gamestates = new Gamestates();
@@ -34,18 +34,12 @@ namespace SpringandeGris
         Camera camera = new Camera();
         public static Random rng = new Random();
 
-<<<<<<< HEAD
+
         public static Texture2D background, startmenuTexture, pausemenuTexture, shopmenuTexture, playButton, playButtonActive, shopButton, 
                   shopButtonActive, exitButton, exitButtonActive, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive, 
                   buyButton, buyButtonActive, backButton, backButtonActive, flyingsprite, level1Texture, level2Texture, 
-                  level3Texture, level4Texture, damagesprite, objectSprite,munkSprite;
+                  level3Texture, level4Texture, damagesprite, objectSprite,munkSprite, levelmenuBackground, level1ZoomTexture;
 
-=======
-        Texture2D background, startmenuTexture, pausemenuTexture, shopmenuTexture, playButton, playButtonActive, shopButton,
-                  shopButtonActive, exitButton, exitButtonActive, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive,
-                  buyButton, buyButtonActive, backButton, backButtonActive, flyingsprite, levelmenuBackground, level1Texture, level1ZoomTexture, level2Texture, 
-                  level3Texture, level4Texture;
->>>>>>> b06bb1bfe2c6369b044cbe6e72074c6c0d7efb15
         Vector2 backgroundTest;
         float backgroundWidth;
         
@@ -94,15 +88,11 @@ namespace SpringandeGris
 
             Texture2D playerSprite = Content.Load<Texture2D>("player");
             Texture2D playerCrouch = Content.Load<Texture2D>("Crouch");
-<<<<<<< HEAD
-            objectSprite = Content.Load<Texture2D>("Block");
+
+
             flyingsprite = Content.Load<Texture2D>("snow123");
-            damagesprite = Content.Load<Texture2D>("images");
-=======
-            Texture2D objectSprite = Content.Load<Texture2D>("flyingGrasBlock_100x30");
-            flyingsprite = Content.Load<Texture2D>("snow123");
-            Texture2D damagesprite = Content.Load<Texture2D>("grasBlock_100x60");
->>>>>>> b06bb1bfe2c6369b044cbe6e72074c6c0d7efb15
+            objectSprite = Content.Load<Texture2D>("flyingGrasBlock_100x30");
+            damagesprite = Content.Load<Texture2D>("grasBlock_100x60");
             background = Content.Load<Texture2D>("Forest-31");
             munkSprite = Content.Load<Texture2D>("snow123");
             backgroundWidth = background.Width;
@@ -161,20 +151,8 @@ namespace SpringandeGris
             
             
                        
-<<<<<<< HEAD
-           
-=======
-            //Lägger till 10 blocks på rad med ett avstånd mellan varandra som är bredden på objektet.
-            for (int i = 0; i < 1000; i++)
-            {
-                blocklista.Add(new Block(objectSprite, new Vector2(positionx, 100)));
-                
-                damageblocks.Add(new DamageBlock(damagesprite, new Vector2(positionx, 424)));
 
-                positionx += blocklista[i].ObjectHitbox.Width + 100;
-            }
 
->>>>>>> b06bb1bfe2c6369b044cbe6e72074c6c0d7efb15
 
             base.Initialize();
         }
@@ -190,7 +168,7 @@ namespace SpringandeGris
 
             lvl1 = new Level1(player);
 
-            effect = Content.Load<SoundEffect>("Jump");
+            effect = Content.Load<SoundEffect>("JUMP");
 
           
           
