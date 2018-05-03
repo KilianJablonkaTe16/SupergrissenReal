@@ -59,6 +59,16 @@ namespace SpringandeGris
 
             }
 
+            foreach (ObjektBasklassen objekten in Game1.Objekten.ToArray())
+            {
+                if (objekten.health < 0)
+                {
+                    Game1.Objekten.Remove(objekten);
+                }
+
+            }
+
+
             //Pausar spelet. 
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
             {

@@ -28,7 +28,66 @@ namespace SpringandeGris
         {
 
             position += velocity;
-            
+
+            if (ObjectHitbox.Intersects(player.PlayerHitbox))
+                health = -1;
+
+
+            //Ändrar på playerns position när den träffar översidan av ett objekt
+            if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Up)
+            {
+
+
+                player.harhoppat = false;
+                player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
+                if (player.ärodödlig == false)
+                {
+                    //Playern tar 1 damage
+                    player.health--;
+                    player.timer = 1000;
+
+                }
+
+                
+            }
+
+            //Ändrar på playerns position när den träffar undersidan av ett objekt
+            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Down)
+            {
+
+                player.position.Y = ObjectHitbox.Location.X + player.PlayerHitbox.Height;
+                if (player.ärodödlig == false)
+                {
+                    //Playern tar 1 damage
+                    player.health--;
+                    player.timer = 1000;
+                }
+            }
+            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Left)
+            {
+
+                player.position.X = ObjectHitbox.Location.X - player.PlayerHitbox.Width;
+                player.harhoppat = true;
+                //Playern tar 1 damage;
+                player.health--;
+                if (player.ärodödlig == false)
+                {
+
+                    player.timer = 1000;
+                }
+
+            }
+            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Right)
+            {
+                player.position.X = ObjectHitbox.Location.X + player.PlayerHitbox.Width;
+                player.harhoppat = true;
+                player.health--;
+                if (player.ärodödlig == false)
+                {
+                    player.timer = 1000;
+                }
+
+            }
 
         }
 

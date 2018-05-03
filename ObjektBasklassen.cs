@@ -17,7 +17,7 @@ namespace SpringandeGris
         protected Vector2 position, oldposition, velocity;
         protected Texture2D texture;
         protected Hitboxes hitboxes;
-
+        public int health;
 
         public ObjektBasklassen(Texture2D texture)
         {
