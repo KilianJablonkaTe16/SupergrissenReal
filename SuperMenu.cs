@@ -25,9 +25,9 @@ namespace SpringandeGris
         {
             spriteBatch.Draw(menuTexture, Vector2.Zero, Color.White);
 
-            foreach (SuperButtons pauseButton in buttonLista)
+            foreach (SuperButtons buttons in buttonLista)
             {
-                pauseButton.Draw(spriteBatch);
+                buttons.Draw(spriteBatch);
             }
         }
 

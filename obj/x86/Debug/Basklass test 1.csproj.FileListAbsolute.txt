@@ -57,3 +57,8 @@ C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\D
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\obj\x86\Debug\Basklass test 1.csprojResolveAssemblyReference.cache
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\obj\x86\Debug\SpringandeGris.exe
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\obj\x86\Debug\SpringandeGris.pdb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\flyingGrasBlock_100x30.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\grasBlock_100x60.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-1-zoom.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\levelmeny_bakgrund.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\levelmeny_bakgrund_utan.xnb

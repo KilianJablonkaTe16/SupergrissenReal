@@ -69,7 +69,7 @@ namespace SpringandeGris
             {
                 mouseButtonLook = ButtonLook.lookingButton;
 
-                if (mouseButtonLook == ButtonLook.lookingButton && nowMousestate.LeftButton == ButtonState.Pressed && lastmousestate.LeftButton != ButtonState.Pressed)
+                if (mouseButtonLook == ButtonLook.lookingButton && nowMousestate.LeftButton == ButtonState.Pressed)
                 {
                     return ButtonLook.clickingButton;
                 }

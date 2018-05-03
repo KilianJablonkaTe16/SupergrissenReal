@@ -32,9 +32,9 @@ namespace SpringandeGris
         Camera camera = new Camera();
         Random rng = new Random();
 
-        Texture2D background, startmenuTexture, pausemenuTexture, shopmenuTexture, playButton, playButtonActive, shopButton, 
-                  shopButtonActive, exitButton, exitButtonActive, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive, 
-                  buyButton, buyButtonActive, backButton, backButtonActive, flyingsprite, level1Texture, level2Texture, 
+        Texture2D background, startmenuTexture, pausemenuTexture, shopmenuTexture, playButton, playButtonActive, shopButton,
+                  shopButtonActive, exitButton, exitButtonActive, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive,
+                  buyButton, buyButtonActive, backButton, backButtonActive, flyingsprite, levelmenuBackground, level1Texture, level1ZoomTexture, level2Texture, 
                   level3Texture, level4Texture;
         Vector2 backgroundTest;
         float backgroundWidth;
@@ -88,9 +88,9 @@ namespace SpringandeGris
 
             Texture2D playerSprite = Content.Load<Texture2D>("player");
             Texture2D playerCrouch = Content.Load<Texture2D>("Crouch");
-            Texture2D objectSprite = Content.Load<Texture2D>("grasBlock_100x60");
+            Texture2D objectSprite = Content.Load<Texture2D>("flyingGrasBlock_100x30");
             flyingsprite = Content.Load<Texture2D>("snow123");
-            Texture2D damagesprite = Content.Load<Texture2D>("flyingGrasBlock_100x30");
+            Texture2D damagesprite = Content.Load<Texture2D>("grasBlock_100x60");
             background = Content.Load<Texture2D>("Forest-31");
             backgroundWidth = background.Width;
             backgroundTest = new Vector2(0, 0);
@@ -100,6 +100,7 @@ namespace SpringandeGris
             startmenuTexture = Content.Load<Texture2D>("title_screen_almost");
             shopmenuTexture = Content.Load<Texture2D>("liten_shopscreen_test");
             pausemenuTexture = Content.Load<Texture2D>("liten_pausescreen_test");
+            levelmenuBackground = Content.Load<Texture2D>("levelmeny_bakgrund_utan");
             #endregion
 
             //Alla knappterturers
@@ -126,6 +127,8 @@ namespace SpringandeGris
             buyButtonActive = Content.Load<Texture2D>("buyButton_active");
 
             level1Texture = Content.Load<Texture2D>("level-1");
+            level1ZoomTexture = Content.Load<Texture2D>("level-1-zoom");
+
             level2Texture = Content.Load<Texture2D>("level-2");
             level3Texture = Content.Load<Texture2D>("level-3");
             level4Texture = Content.Load<Texture2D>("level-4");
@@ -136,7 +139,7 @@ namespace SpringandeGris
 
             startmenu = new Startmenu(startmenuTexture, playButton, playButtonActive, shopButton, shopButtonActive, exitButton, exitButtonActive);
             shopmenu = new Shopmenu(shopmenuTexture, buyButton, buyButtonActive, backButton, backButtonActive);
-            levelMenu = new LevelMenu(level1Texture, level2Texture, level3Texture, level4Texture);
+            levelMenu = new LevelMenu(levelmenuBackground, backButton, backButtonActive);
             pausemenu = new Pausemenu(pausemenuTexture, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive);
             player = new Player(playerSprite, playerCrouch);
 
@@ -152,7 +155,7 @@ namespace SpringandeGris
                 
                 damageblocks.Add(new DamageBlock(damagesprite, new Vector2(positionx, 424)));
 
-                positionx += blocklista[i].ObjectHitbox.Width + 200;
+                positionx += blocklista[i].ObjectHitbox.Width + 100;
             }
 
 

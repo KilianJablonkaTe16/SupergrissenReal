@@ -13,35 +13,118 @@ namespace SpringandeGris
     class LevelMenu:SuperMenu
     {
         SuperButtons levelButton;
-        Texture2D level1, level2, level3, level4;
 
-        public LevelMenu(Texture2D level1, Texture2D level2, Texture2D level3, Texture2D level4)
+        public LevelMenu(Texture2D levelmenyBackground, Texture2D backButton, Texture2D backButtonActive)
         {
-            this.level1 = level1;
-            this.level2 = level2;
-            this.level3 = level3;
-            this.level4 = level4;
-            //buttonLista.Add(new SuperButtons(level1, new Vector2(50, 100)));
-            //buttonLista.Add(new SuperButtons(shopButton, shopButtonActive, new Vector2(50, 250)));
-            //buttonLista.Add(new SuperButtons(exitButton, exitButtonActive, new Vector2(50, 400)));
+            buttonLista.Add(new SuperButtons(backButton, backButtonActive, new Vector2(50, 150)));
+            menuTexture = levelmenyBackground;
         }
 
         public Gamestates Update()
         {
+            // Vad metoden gör beskirvs i SuperMenus.
+            GettingNewValues();
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Down) || Keyboard.GetState().IsKeyDown(Keys.Up))
+            {
+                keysUsed = true;
+            }
+
+            // Nedan är det som gör så att du kan välja knapp med muspekaren. 
+            #region Funktionalitet för muspekar användning
+            foreach (SuperButtons button in buttonLista)
+            {
+                if (nowMouseState.Position != lastMouseState.Position)
+                {
+                    keysUsed = false;
+                }
+
+                if (keysUsed == false)
+                {
+                    // Vad metoden gör beskrivs i SuperMenus klassen.
+                    ButtonListForloop();
+
+                    #region Gamstates ändring för musanvändning
+                    //Nedan ändra på  gamestates beroende på wilken knapp man tycker på.
+                    //=================================================================================================================
+                    if (buttonLista[0].MouseOnButton() == ButtonLook.clickingButton && lastMouseState.LeftButton != ButtonState.Pressed)
+                    {
+                        return Gamestates.startmenu;
+                    }
+
+                    lastMouseState = nowMouseState;
+                    valdKnapp = -1;
+                    gammalValdKnapp = -1;
+                    //=================================================================================================================
+                    #endregion
+                }
+            }
+            #endregion
+
+            // Nedan är det som gör så att du kan välja knapp med piltangenter.
+            #region Piltangent funktionaliteten
+            //=============================================================================================================================================================================
+            if (FirtButtonActive() == true)
+            {
+                valdKnapp++;
+                buttonLista[valdKnapp].Update(ButtonLook.lookingButton);
+                //buttonLista[1].Update(ButtonLook.normalButton);
+                //buttonLista[2].Update(ButtonLook.normalButton);
+            }
+
+            if (ClickCombo(nowButtonState, lastButtonState) == ClickCombos.up && valdKnapp >= 0)
+            {
+                buttonLista[valdKnapp].Update(ButtonLook.normalButton);
+                valdKnapp--;
+
+                if (valdKnapp == -1)
+                    valdKnapp++;
+
+                buttonLista[valdKnapp].Update(ButtonLook.lookingButton);
+            }
+
+            if (ClickCombo(nowButtonState, lastButtonState) == ClickCombos.down && valdKnapp <= 2 && gammalValdKnapp != -1)
+            {
+                buttonLista[valdKnapp].Update(ButtonLook.normalButton);
+                valdKnapp++;
+
+                if (valdKnapp == 0)
+                    valdKnapp--;
+
+                buttonLista[valdKnapp].Update(ButtonLook.lookingButton);
+            }
+
+            lastButtonState = nowButtonState;
+
+            //Nedan ändras gamestates beroende på vilken knapp man "aktiverar". 
+            #region Gamestate retunering
+            if (Keyboard.GetState().IsKeyDown(Keys.Enter) && valdKnapp == 0)
+            {
+                valdKnapp = -1;
+                gammalValdKnapp = -1;
+                buttonLista[0].Update(ButtonLook.normalButton);
+                return Gamestates.startmenu;
+            }
+
+            //else if (Keyboard.GetState().IsKeyDown(Keys.Enter) && valdKnapp == 1)
+            //{
+            //    ResetingButtos();
+            //    return Gamestates.shopmenu;
+            //}
+
+            //else if (Keyboard.GetState().IsKeyDown(Keys.Enter) && valdKnapp == 2)
+            //{
+            //    return Gamestates.exitgame;
+            //}
+            #endregion
+            //=====================================================================================================================================================
+            #endregion
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
                 return Gamestates.inGame;
 
             else
                 return Gamestates.levelmenu;
 
-        }
-
-        public void Draw(SpriteBatch spriteBatch)
-        {
-            spriteBatch.Draw(level1, Vector2.Zero, Color.White);
-            spriteBatch.Draw(level2, new Vector2(level1.Width, 0), Color.White);
-            spriteBatch.Draw(level3, new Vector2(0, level1.Height), Color.White);
-            spriteBatch.Draw(level4, new Vector2(level3.Width, level2.Height), Color.White);
         }
     }
 }
