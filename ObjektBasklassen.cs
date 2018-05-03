@@ -11,8 +11,8 @@ namespace SpringandeGris
 {
     //Samuel har gjort det här 
 
-   public enum Hitboxes { Left, Right, Up, Down }
-      public class ObjektBasklassen
+    public enum Hitboxes { Left, Right, Up, Down }
+    public class ObjektBasklassen
     {
         protected Vector2 position, oldposition, velocity;
         protected Texture2D texture;
@@ -52,7 +52,7 @@ namespace SpringandeGris
 
 
 
-         public virtual void Update(Player player, GameTime gameTime)
+        public virtual void Update(Player player, GameTime gameTime)
         {
 
             //Ändrar på playerns position när den träffar översidan av ett objekt
@@ -81,31 +81,22 @@ namespace SpringandeGris
                 player.position.X = ObjectHitbox.Location.X - player.PlayerHitbox.Width;
                 //player.harhoppat = true;
 
-<<<<<<< HEAD
-=======
+
             }
-            else if(ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Right)
+            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Right)
             {
                 player.position.X = ObjectHitbox.Location.X + player.PlayerHitbox.Width;
                 player.harhoppat = true;
 
 
             }
-            
-        
-            
-                
-                
->>>>>>> 022a89aada5891e7ea730ba279f98f86138052fb
 
-            }
 
-            player.harhoppat = true;            
+
+
+            player.harhoppat = true;
+
         }
-
-
-
-
         //Använder enums för att se vilken sida om objektet som spelaren befinner sig om
         //Skapar även nya rektanglar så att se om man är innuti den rektangeln
         public Hitboxes CheckHitboxes(Rectangle collision, Player player)
@@ -115,7 +106,7 @@ namespace SpringandeGris
                 hitboxes = Hitboxes.Left;
                 return Hitboxes.Left;
             }
-            else if(player.PlayerHitbox.Intersects(new Rectangle(collision.X + ObjectHitbox.Width, collision.Y, ObjectHitbox.Width, ObjectHitbox.Height)))
+            else if (player.PlayerHitbox.Intersects(new Rectangle(collision.X + ObjectHitbox.Width, collision.Y, ObjectHitbox.Width, ObjectHitbox.Height)))
             {
                 hitboxes = Hitboxes.Right;
                 return Hitboxes.Right;
@@ -133,8 +124,8 @@ namespace SpringandeGris
             }
         }
 
-
     }
+
 }
 
 
