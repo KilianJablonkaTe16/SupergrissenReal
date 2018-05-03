@@ -21,11 +21,11 @@ namespace SpringandeGris
             for (int i = 0; i < 10; i++)
             {
 
-                Game1.Objekten.Add(new Block(Game1.objectSprite, new Vector2(player.position.X + Game1.rng.Next(100,10000), Game1.rng.Next(player.position.X + player.PlayerHitbox.Height - 50, player.position.X + player.PlayerHitbox.Height + 50))));
+                Game1.Objekten.Add(new Block(Game1.objectSprite, new Vector2(player.position.X + Game1.rng.Next(100,10000), Game1.rng.Next(Convert.ToInt32(player.position.X) + player.PlayerHitbox.Height - 50, Convert.ToInt32(player.position.X) + player.PlayerHitbox.Height + 50))));
 
                 Game1.Objekten.Add(new DamageBlock(Game1.damagesprite, new Vector2(positionx, 424)));
 
-                positionx += Game1.Objekten[i].ObjectHitbox.Width + 200;
+                positionx += Game1.Objekten[i].ObjectHitbox.Width;
             }
             
 
@@ -43,7 +43,7 @@ namespace SpringandeGris
             //Annars så tar den timerns värde minus hur lång tid som har gått.
             if (timer < 0)
             {
-                Game1.Objekten.Add(new FlyingObjects(Game1.flyingsprite, new Vector2(15000, Game1.rng.Next(400, 600))));
+                Game1.Objekten.Add(new FlyingObjects(Game1.flyingsprite, new Vector2(15000, Game1.rng.Next(100, 300))));
                 timer = Game1.rng.Next(3000, 4000);
             }
             else
