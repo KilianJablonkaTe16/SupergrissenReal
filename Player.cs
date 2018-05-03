@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -9,20 +10,20 @@ using System.Threading.Tasks;
 
 namespace SpringandeGris
 {
-    class Player
+    public class Player
     {
         //Gabriel har gjort playern
 
        public bool harhoppat;
        public Texture2D texture, whichTexture, crouchTexture;
        public Vector2 position, velocity, center, gravity;
-       float crouchpositiony, rotation, sonicSpeed;
+       float rotation, sonicSpeed;
        public float sonicJump;
        public int health = 3;
        KeyboardState nowbuttonpressed,lastbuttonpressed;
        public bool ärodödlig = true;
        public int timer;
-
+       public int munkar = 0;
 
 
 
@@ -39,7 +40,7 @@ namespace SpringandeGris
             whichTexture = texture;
             center = new Vector2(texture.Height / 2, texture.Width / 2);
             sonicJump = -19;
-            gravity = new Vector2(0, 0.9f);
+            gravity = new Vector2(0, 0.5f);
         }
 
         public Rectangle PlayerHitbox
@@ -57,7 +58,7 @@ namespace SpringandeGris
         }
 
 
-        public Gamestates Update(GameTime gametime)
+        public void Update(GameTime gametime, SoundEffect effect)
         {
             if (timer < 0)
             {
@@ -104,6 +105,7 @@ namespace SpringandeGris
                 //position.Y -= 8f;
                 velocity.Y = sonicJump;
                 harhoppat = true;
+                effect.Play();
                 
             }
 
@@ -147,15 +149,15 @@ namespace SpringandeGris
             lastbuttonpressed = nowbuttonpressed;
 
             // Pausar spelet. 
-            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
-            {
-                return Gamestates.pausemenu;
-            }
+            //if (Keyboard.GetState().IsKeyDown(Keys.Escape))
+            //{
+            //    return Gamestates.pausemenu;
+            //}
 
-            else
-            {
-                return Gamestates.inGame;
-            }
+            //else
+            //{
+            //    return Gamestates.inGame;
+            //}
         }
 
 

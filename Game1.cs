@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -21,6 +22,7 @@ namespace SpringandeGris
 
     public class Game1 : Game
     {
+        public static SoundEffect effect;
         //Samuel har gjort game
 
         Gamestates gamestates = new Gamestates();
@@ -28,18 +30,21 @@ namespace SpringandeGris
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         SpriteFont buyJump;
-
+        Level1 lvl1;
         Camera camera = new Camera();
-        Random rng = new Random();
+        public static Random rng = new Random();
 
-        Texture2D background, startmenuTexture, pausemenuTexture, shopmenuTexture, playButton, playButtonActive, shopButton, 
+        public static Texture2D background, startmenuTexture, pausemenuTexture, shopmenuTexture, playButton, playButtonActive, shopButton, 
                   shopButtonActive, exitButton, exitButtonActive, resumeButton, resumeButtonActive, leaveButton, leaveButtonActive, 
                   buyButton, buyButtonActive, backButton, backButtonActive, flyingsprite, level1Texture, level2Texture, 
-                  level3Texture, level4Texture;
+                  level3Texture, level4Texture, damagesprite, objectSprite,munkSprite;
+
         Vector2 backgroundTest;
         float backgroundWidth;
-        int timer;
-        int positionx;
+        
+        
+
+        public static List<ObjektBasklassen> Objekten = new List<ObjektBasklassen>();
 
         //Instanser av klasser
         #region Klassinstanser
@@ -51,14 +56,8 @@ namespace SpringandeGris
         #endregion
 
         //Klasslistor
-        #region Klasslistor
-        List<Block> blocklista = new List<Block>();
-        List<FlyingObjects> flyingblocks = new List<FlyingObjects>();
-        List<DamageBlock> damageblocks = new List<DamageBlock>();
-        #endregion
 
-
-
+        
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -88,10 +87,11 @@ namespace SpringandeGris
 
             Texture2D playerSprite = Content.Load<Texture2D>("player");
             Texture2D playerCrouch = Content.Load<Texture2D>("Crouch");
-            Texture2D objectSprite = Content.Load<Texture2D>("Block");
+            objectSprite = Content.Load<Texture2D>("Block");
             flyingsprite = Content.Load<Texture2D>("snow123");
-            Texture2D damagesprite = Content.Load<Texture2D>("images");
+            damagesprite = Content.Load<Texture2D>("images");
             background = Content.Load<Texture2D>("Forest-31");
+            munkSprite = Content.Load<Texture2D>("snow123");
             backgroundWidth = background.Width;
             backgroundTest = new Vector2(0, 0);
 
@@ -141,20 +141,11 @@ namespace SpringandeGris
             player = new Player(playerSprite, playerCrouch);
 
 
-            // Vad är den här till för?
-            timer = 300;
+            
+            
             
                        
-            //Lägger till 10 blocks på rad med ett avstånd mellan varandra som är bredden på objektet.
-            for (int i = 0; i < 1000; i++)
-            {
-                blocklista.Add(new Block(objectSprite, new Vector2(positionx, 100)));
-                
-                damageblocks.Add(new DamageBlock(damagesprite, new Vector2(positionx, 424)));
-
-                positionx += blocklista[i].ObjectHitbox.Width + 200;
-            }
-
+           
 
             base.Initialize();
         }
@@ -168,7 +159,9 @@ namespace SpringandeGris
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            lvl1 = new Level1(player);
 
+            effect = Content.Load<SoundEffect>("Jump");
 
           
           
@@ -204,40 +197,10 @@ namespace SpringandeGris
             #region Allt i test level och player
             {
                 IsMouseVisible = false;
-                gamestates = player.Update(gameTime);
+                gamestates = lvl1.Update(gameTime, player, effect);
 
                 camera.Update(player.position);
-
-                foreach (Block block in blocklista)
-                {
-                    block.Update(player,gameTime);
-                    block.CheckHitboxes(block.ObjectHitbox, player);
-                    
-                }
-                foreach(FlyingObjects flyingobjects in flyingblocks)
-                {
-                    flyingobjects.Update(player,gameTime);
-                    flyingobjects.CheckHitboxes(flyingobjects.ObjectHitbox, player);
-
-
-                }
-                foreach(DamageBlock damageblocks in damageblocks)
-                {
-                    damageblocks.Update(player,gameTime);
-                    damageblocks.CheckHitboxes(damageblocks.ObjectHitbox, player);
-
-                }
-                //Kollar när värdet på timer är mindre än 0 och då lägger ut blocks i random positioner
-                //Annars så tar den timerns värde minus hur lång tid som har gått.
-                if(timer < 0)
-                {
-                    flyingblocks.Add(new FlyingObjects(flyingsprite, new Vector2(15000, rng.Next(400, 600))));
-                    timer = rng.Next(3000, 4000);
-                }
-                else
-                {
-                    timer -= gameTime.ElapsedGameTime.Milliseconds;
-                }
+                lvl1.Update(gameTime, player, effect);
             }
             #endregion
 
@@ -331,18 +294,11 @@ namespace SpringandeGris
 
 
                 player.Draw(spriteBatch);
-                foreach (Block block in blocklista)
+                foreach (ObjektBasklassen objekten in Objekten)
                 {
-                    block.Draw(spriteBatch);
+                    objekten.Draw(spriteBatch);
                 }
-                foreach(FlyingObjects flyingobjects in flyingblocks)
-                {
-                    flyingobjects.Draw(spriteBatch);
-                }
-                foreach(DamageBlock damageblocks in damageblocks)
-                {
-                    damageblocks.Draw(spriteBatch);
-                }
+               
                 spriteBatch.End();
             }
             #endregion

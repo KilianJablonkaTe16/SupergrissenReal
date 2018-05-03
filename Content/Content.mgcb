@@ -416,3 +416,9 @@
 /processorParam:TextureFormat=Color
 /build:level-4.jpg
 
+#begin Jump.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Jump.wav
+

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SpringandeGris
     //Samuel har gjort det här
 {
-    class Block:Basklass
+    class Block:ObjektBasklassen
     {
       
         public Block(Texture2D texture, Vector2 position):base(texture)

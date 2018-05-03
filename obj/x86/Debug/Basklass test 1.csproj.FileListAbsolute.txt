@@ -152,3 +152,11 @@ C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\D
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-2.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-3.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-4.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\BuyJump.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\Forest-31.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\level-1.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\level-2.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\level-3.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\level-4.xnb
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\HoppLjud.wma
+C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\HoppLjud.xnb

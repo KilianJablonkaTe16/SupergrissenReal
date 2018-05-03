@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace SpringandeGris
 {
-    class FlyingObjects:Basklass
+    class FlyingObjects:ObjektBasklassen
     {
         //Samuel har gjort det här
-        int damage;
+        
        
 
 
@@ -27,7 +27,7 @@ namespace SpringandeGris
         public override void Update(Player player, GameTime gameTime)
         {
             position += velocity;
-
+            
 
         }
 

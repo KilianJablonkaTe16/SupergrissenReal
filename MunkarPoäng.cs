@@ -8,18 +8,17 @@ using System.Threading.Tasks;
 
 namespace SpringandeGris
 {
-
-    //Samuel har gjort det här
-    class DamageBlock:ObjektBasklassen
+    class MunkarPoäng : ObjektBasklassen
     {
-        public DamageBlock(Texture2D texture, Vector2 position):base(texture)
+
+        public MunkarPoäng(Texture2D texture, Vector2 position) : base(texture)
         {
             this.texture = texture;
-            this.position = position;
+
 
         }
 
-        public override void Update (Player player, GameTime gameTime)
+        public override void Update(Player player, GameTime gameTime)
         {
             //Ändrar på playerns position när den träffar översidan av ett objekt
             if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Up)
@@ -30,9 +29,10 @@ namespace SpringandeGris
                 player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
                 if (player.ärodödlig == false)
                 {
-                    //Playern tar 1 damage
-                    player.health--;
+
                     player.timer = 1000;
+                    //Playern får 1 munk
+                    player.munkar += 1;
                 }
 
 
@@ -45,9 +45,10 @@ namespace SpringandeGris
                 player.position.Y = ObjectHitbox.Location.X + player.PlayerHitbox.Height;
                 if (player.ärodödlig == false)
                 {
-                    //Playern tar 1 damage
-                    player.health--;
+
                     player.timer = 1000;
+                    //Playern får 1 munk
+                    player.munkar += 1;
                 }
             }
             else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Left)
@@ -55,31 +56,20 @@ namespace SpringandeGris
 
                 player.position.X = ObjectHitbox.Location.X - player.PlayerHitbox.Width;
                 player.harhoppat = true;
-                //Playern tar 1 damage;
-                player.health--;
+
+                //Playern får 1 munk
+                player.munkar += 1;
+
                 if (player.ärodödlig == false)
                 {
-                    
+
                     player.timer = 1000;
+
+
                 }
 
             }
 
-
         }
-
-
-
-        public override void Draw(SpriteBatch spriteBatch)
-        {
-
-            spriteBatch.Draw(texture, position, Color.White);
-        }
-
-
-
-
-
-
     }
 }
