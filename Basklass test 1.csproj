@@ -64,18 +64,18 @@
     <Compile Include="FlyingObjects.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Block.cs" />
-    <Compile Include="LevelButtons.cs" />
-    <Compile Include="LevelMenu.cs" />
+    <Compile Include="Menyer\Buttons\LevelButtons.cs" />
+    <Compile Include="Menyer\LevelMenu.cs" />
     <Compile Include="LevelOneTest.cs" />
-    <Compile Include="Pausemenu.cs" />
+    <Compile Include="Menyer\Pausemenu.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShopButton.cs" />
-    <Compile Include="Shopmenu.cs" />
-    <Compile Include="Startmenu.cs" />
-    <Compile Include="SuperButtons.cs" />
-    <Compile Include="SuperMenu.cs" />
+    <Compile Include="Menyer\Buttons\ShopButton.cs" />
+    <Compile Include="Menyer\Shopmenu.cs" />
+    <Compile Include="Menyer\Startmenu.cs" />
+    <Compile Include="Menyer\Buttons\SuperButtons.cs" />
+    <Compile Include="Menyer\SuperMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

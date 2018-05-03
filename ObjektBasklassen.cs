@@ -59,40 +59,32 @@ namespace SpringandeGris
             if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Up)
             {
 
-              
+
                 player.harhoppat = false;
-                
-                
+
+
                 player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
-               
+                player.velocity.Y = 0;
+
             }
 
             //Ändrar på playerns position när den träffar undersidan av ett objekt
-            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Down)
+            if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Down)
             {
 
-               player.position.Y = ObjectHitbox.Location.X + player.PlayerHitbox.Height;
-               
+                player.position.Y = ObjectHitbox.Location.X + player.PlayerHitbox.Height;
             }
 
-            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Left)
+            if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Left)
             {
 
-               player.position.X = ObjectHitbox.Location.X - player.PlayerHitbox.Width;
-               player.harhoppat = true;
-               
+                player.position.X = ObjectHitbox.Location.X - player.PlayerHitbox.Width;
+                //player.harhoppat = true;
+
 
             }
-            
-        
-            
-                
-                
 
-            
-
-            
-            
+            player.harhoppat = true;            
         }
 
 
