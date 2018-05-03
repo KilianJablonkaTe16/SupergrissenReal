@@ -104,6 +104,7 @@ namespace SpringandeGris
 
             if (Keyboard.GetState().IsKeyDown(Keys.Enter) && valdKnapp == 0 && lastButtonState != nowButtonState)
             {
+                player.velocity.Y++;
                 coins -= 100;
                 upgradeJump++;
             }
@@ -143,7 +144,7 @@ namespace SpringandeGris
             }
             spriteBatch.DrawString(buyJump, "Jumpheight: " + upgradeJump.ToString(), new Vector2(600, 150), Color.White);
             spriteBatch.DrawString(buyJump, "Runningspeed: " + upgradeSpeed.ToString(), new Vector2(600, 300), Color.White);
-            spriteBatch.DrawString(buyJump, "Coins: " + coins.ToString(), new Vector2(600, 25), Color.White);
+            spriteBatch.DrawString(buyJump, "Munkar: " + coins.ToString(), new Vector2(600, 25), Color.White);
         }
 
     }

@@ -1,52 +1,39 @@
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\obj\x86\Debug\Basklass test 1.csprojResolveAssemblyReference.cache
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\obj\x86\Debug\SpringandeGris.exe
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\obj\x86\Debug\SpringandeGris.pdb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\crouch.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\kys.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\Mario.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\soja.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SpringandeGris.exe
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SpringandeGris.pdb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\MonoGame.Framework.dll
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.dll
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.DXGI.dll
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.XInput.dll
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\MonoGame.Framework.xml
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.xml
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.DXGI.xml
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.XInput.xml
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\player.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\Block.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\liten_pausescreen_test.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\liten_shopscreen_test.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\liten_startscreen_test.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\play_knapp.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\play_looking_test.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\snow123.xnb
-C:\Users\samuel.karlssonsabz\Source\Repos\Gruppuppgift\Banobjekt test 1\bin\Windows\x86\Debug\Content\images.xnb
-C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\kys.xnb
-C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\soja.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\backButton.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\backButton_active.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\Block.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\buyButton.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\buyButton_active.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\BuyJump.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\crouch.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\exitButton.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\exitButton_active.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\Forest-31.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\images.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\kys.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\leaveButton.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\leaveButton_active.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-1.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-2.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-3.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-4.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\liten_pausescreen_test.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\liten_shopscreen_test.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\liten_startscreen_test.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\Mario.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\playButton.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\playButton_active.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\player.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\play_knapp.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\play_looking_test.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\resumeButton.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\resumeButton_active.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\shopButton.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\shopButton_active.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\snow123.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\soja.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\title_screen_almost.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\upgradeButton.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\upgradeButton_active.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\SpringandeGris.exe
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\SpringandeGris.pdb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\MonoGame.Framework.dll
@@ -70,6 +57,7 @@ C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\D
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\obj\x86\Debug\Basklass test 1.csprojResolveAssemblyReference.cache
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\obj\x86\Debug\SpringandeGris.exe
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\obj\x86\Debug\SpringandeGris.pdb
+<<<<<<< HEAD
 <<<<<<< HEAD
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\backButton.xnb
 C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\backButton_active.xnb
@@ -160,3 +148,10 @@ C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\D
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\level-4.xnb
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\HoppLjud.wma
 C:\Users\samuel.karlssonsabz\Documents\GitHub\SupergrissenReal\bin\Windows\x86\Debug\Content\HoppLjud.xnb
+=======
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\flyingGrasBlock_100x30.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\grasBlock_100x60.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\level-1-zoom.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\levelmeny_bakgrund.xnb
+C:\Users\kilian.jablonka\Desktop\Supergrissen\Banobjekt test 1\bin\Windows\x86\Debug\Content\levelmeny_bakgrund_utan.xnb
+>>>>>>> b06bb1bfe2c6369b044cbe6e72074c6c0d7efb15
