@@ -26,7 +26,7 @@ namespace SpringandeGris
 
         public override void Update(Player player, GameTime gameTime)
         {
-<<<<<<< HEAD
+
 
             position += velocity;
 
@@ -89,10 +89,10 @@ namespace SpringandeGris
                 }
 
             }
-=======
+
             player.position += velocity;
             
->>>>>>> 34c712f9df52516fbf08a595707b6cf405d40e8c
+
 
         }
 
