@@ -26,8 +26,73 @@ namespace SpringandeGris
 
         public override void Update(Player player, GameTime gameTime)
         {
+<<<<<<< HEAD
+
+            position += velocity;
+
+            if (ObjectHitbox.Intersects(player.PlayerHitbox))
+                health = -1;
+
+
+            //Ändrar på playerns position när den träffar översidan av ett objekt
+            if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Up)
+            {
+
+
+                player.harhoppat = false;
+               
+                if (player.ärodödlig == false)
+                {
+                    //Playern tar 1 damage
+                    player.health--;
+                    player.timer = 1000;
+
+                }
+
+                
+            }
+
+            //Ändrar på playerns position när den träffar undersidan av ett objekt
+            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Down)
+            {
+
+                 
+                if (player.ärodödlig == false)
+                {
+                    //Playern tar 1 damage
+                    player.health--;
+                    player.timer = 1000;
+                }
+            }
+            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Left)
+            {
+
+                
+                player.harhoppat = true;
+                //Playern tar 1 damage;
+                player.health--;
+                if (player.ärodödlig == false)
+                {
+
+                    player.timer = 1000;
+                }
+
+            }
+            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Right)
+            {
+                
+                player.harhoppat = true;
+                player.health--;
+                if (player.ärodödlig == false)
+                {
+                    player.timer = 1000;
+                }
+
+            }
+=======
             player.position += velocity;
             
+>>>>>>> 34c712f9df52516fbf08a595707b6cf405d40e8c
 
         }
 

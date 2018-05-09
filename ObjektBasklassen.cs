@@ -17,7 +17,7 @@ namespace SpringandeGris
         protected Vector2 position, oldposition, velocity;
         protected Texture2D texture;
         protected Hitboxes hitboxes;
-
+        public int health;
 
         public ObjektBasklassen(Texture2D texture)
         {
@@ -56,8 +56,20 @@ namespace SpringandeGris
             {
                 player.harhoppat = false;
 
+<<<<<<< HEAD
                 player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
                 player.velocity.Y = 0;
+=======
+
+<<<<<<< HEAD
+                player.position.Y = ObjectHitbox.Location.Y + 200;
+               
+=======
+                player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
+                player.velocity.Y = 0;
+
+>>>>>>> 34c712f9df52516fbf08a595707b6cf405d40e8c
+>>>>>>> 2bea96998d8fbf5137b31d000581dc21ba96352a
             }
 
             //Ändrar på playerns position när den träffar undersidan av ett objekt

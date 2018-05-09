@@ -14,18 +14,18 @@ namespace SpringandeGris
     {
         
         static int  timer = 300;
-        int positionx = 0;
+        int positionx = 100;
         public Level1(Player  player)
         {
            
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 100; i++)
             {
 
-                Game1.Objekten.Add(new Block(Game1.objectSprite, new Vector2(player.position.X + Game1.rng.Next(100,10000), Game1.rng.Next(Convert.ToInt32(player.position.X) + player.PlayerHitbox.Height - 50, Convert.ToInt32(player.position.X) + player.PlayerHitbox.Height + 50))));
+                //Game1.Objekten.Add(new Block(Game1.objectSprite, new Vector2(player.position.X + Game1.rng.Next(100,10000), Game1.rng.Next(Convert.ToInt32(player.position.X) + player.PlayerHitbox.Height - 50, Convert.ToInt32(player.position.X) + player.PlayerHitbox.Height + 50))));
 
-                Game1.Objekten.Add(new DamageBlock(Game1.damagesprite, new Vector2(positionx, 424)));
+                Game1.Objekten.Add(new DamageBlock(Game1.damagesprite, new Vector2(positionx, 700)));
 
-                positionx += Game1.Objekten[i].ObjectHitbox.Width;
+                positionx += 200;
             }
             
 
@@ -43,7 +43,7 @@ namespace SpringandeGris
             //Annars så tar den timerns värde minus hur lång tid som har gått.
             if (timer < 0)
             {
-                Game1.Objekten.Add(new FlyingObjects(Game1.flyingsprite, new Vector2(15000, Game1.rng.Next(100, 300))));
+                Game1.Objekten.Add(new FlyingObjects(Game1.flyingsprite, new Vector2(30000, Game1.rng.Next(100, 300))));
                 timer = Game1.rng.Next(3000, 4000);
             }
             else
@@ -58,6 +58,16 @@ namespace SpringandeGris
                 objekten.CheckHitboxes(objekten.ObjectHitbox, player);
 
             }
+
+            foreach (ObjektBasklassen objekten in Game1.Objekten.ToArray())
+            {
+                if (objekten.health < 0)
+                {
+                    Game1.Objekten.Remove(objekten);
+                }
+
+            }
+
 
             //Pausar spelet. 
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
