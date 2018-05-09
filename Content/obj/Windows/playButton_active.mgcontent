@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/playButton_active.jpg</SourceFile>
-  <SourceTime>2018-04-26T13:42:40.2117203+02:00</SourceTime>
-  <DestFile>C:/Users/samuel.karlssonsabz/Documents/GitHub/SupergrissenReal/Content/bin/Windows/playButton_active.xnb</DestFile>
-  <DestTime>2018-05-03T13:15:50.8392506+02:00</DestTime>
+  <SourceFile>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/playButton_active.jpg</SourceFile>
+  <SourceTime>2018-05-03T14:20:23.0376786+02:00</SourceTime>
+  <DestFile>C:/Users/kilian.jablonka/Desktop/Supergrissen/Banobjekt test 1/Content/bin/Windows/playButton_active.xnb</DestFile>
+  <DestTime>2018-05-03T14:20:44.473711+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

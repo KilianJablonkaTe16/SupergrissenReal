@@ -118,7 +118,11 @@ namespace SpringandeGris
             #endregion
             //=====================================================================================================================================================
             #endregion
+<<<<<<< HEAD:LevelMenu.cs
             if (Keyboard.GetState().IsKeyDown(Keys.L))
+=======
+            else if (Keyboard.GetState().IsKeyDown(Keys.L))
+>>>>>>> 34c712f9df52516fbf08a595707b6cf405d40e8c:Menyer/LevelMenu.cs
                 return Gamestates.inGame;
 
             else

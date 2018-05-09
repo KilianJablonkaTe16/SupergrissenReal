@@ -11,8 +11,8 @@ namespace SpringandeGris
 {
     //Samuel har gjort det här 
 
-   public enum Hitboxes { Left, Right, Up, Down }
-      public class ObjektBasklassen
+    public enum Hitboxes { Left, Right, Up, Down }
+    public class ObjektBasklassen
     {
         protected Vector2 position, oldposition, velocity;
         protected Texture2D texture;
@@ -52,59 +52,56 @@ namespace SpringandeGris
 
 
 
-         public virtual void Update(Player player, GameTime gameTime)
+        public virtual void Update(Player player, GameTime gameTime)
         {
 
             //Ändrar på playerns position när den träffar översidan av ett objekt
             if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Up)
             {
 
-              
+
                 player.harhoppat = false;
 
 
+<<<<<<< HEAD
                 player.position.Y = ObjectHitbox.Location.Y + 200;
                
+=======
+                player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
+                player.velocity.Y = 0;
+
+>>>>>>> 34c712f9df52516fbf08a595707b6cf405d40e8c
             }
 
             //Ändrar på playerns position när den träffar undersidan av ett objekt
-            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Down)
+            if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Down)
             {
 
-               player.position.Y = ObjectHitbox.Location.X + player.PlayerHitbox.Height;
-               
+                player.position.Y = ObjectHitbox.Location.X + player.PlayerHitbox.Height;
             }
 
-            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Left)
+            if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Left)
             {
 
-               player.position.X = ObjectHitbox.Location.X - player.PlayerHitbox.Width;
-               player.harhoppat = true;
-               
+                player.position.X = ObjectHitbox.Location.X - player.PlayerHitbox.Width;
+                //player.harhoppat = true;
+
 
             }
-            else if(ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Right)
+            else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Right)
             {
                 player.position.X = ObjectHitbox.Location.X + player.PlayerHitbox.Width;
                 player.harhoppat = true;
 
 
             }
-            
-        
-            
-                
-                
 
-            
 
-            
-            
+
+
+            player.harhoppat = true;
+
         }
-
-
-
-
         //Använder enums för att se vilken sida om objektet som spelaren befinner sig om
         //Skapar även nya rektanglar så att se om man är innuti den rektangeln
         public Hitboxes CheckHitboxes(Rectangle collision, Player player)
@@ -114,7 +111,7 @@ namespace SpringandeGris
                 hitboxes = Hitboxes.Left;
                 return Hitboxes.Left;
             }
-            else if(player.PlayerHitbox.Intersects(new Rectangle(collision.X + ObjectHitbox.Width, collision.Y, ObjectHitbox.Width, ObjectHitbox.Height)))
+            else if (player.PlayerHitbox.Intersects(new Rectangle(collision.X + ObjectHitbox.Width, collision.Y, ObjectHitbox.Width, ObjectHitbox.Height)))
             {
                 hitboxes = Hitboxes.Right;
                 return Hitboxes.Right;
@@ -132,8 +129,8 @@ namespace SpringandeGris
             }
         }
 
-
     }
+
 }
 
 
