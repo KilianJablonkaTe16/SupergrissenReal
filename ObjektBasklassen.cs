@@ -41,13 +41,9 @@ namespace SpringandeGris
                 objecthitbox.Width = texture.Width;
                 objecthitbox.Height = texture.Height;
 
-
-
                 return objecthitbox;
             }
         }
-
-
 
 
 
@@ -58,19 +54,21 @@ namespace SpringandeGris
             //Ändrar på playerns position när den träffar översidan av ett objekt
             if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Up)
             {
-
-
                 player.harhoppat = false;
 
 
-<<<<<<< HEAD
-                player.position.Y = ObjectHitbox.Location.Y + 200;
-               
-=======
                 player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
                 player.velocity.Y = 0;
 
->>>>>>> 34c712f9df52516fbf08a595707b6cf405d40e8c
+
+
+                player.position.Y = ObjectHitbox.Location.Y + 200;
+               
+
+                player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
+                player.velocity.Y = 0;
+
+
             }
 
             //Ändrar på playerns position när den träffar undersidan av ett objekt
