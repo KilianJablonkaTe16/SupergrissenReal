@@ -61,9 +61,9 @@ namespace SpringandeGris
 
               
                 player.harhoppat = false;
-                
-                
-                player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
+
+
+                player.position.Y = ObjectHitbox.Location.Y + 200;
                
             }
 

@@ -27,7 +27,8 @@ namespace SpringandeGris
 
 
                 player.harhoppat = false;
-                player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
+                player.position.Y = ObjectHitbox.Location.Y - player.texture.Height;
+                player.velocity.Y = -1;
                 if (player.ärodödlig == false)
                 {
                     //Playern tar 1 damage

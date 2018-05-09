@@ -118,7 +118,7 @@ namespace SpringandeGris
             #endregion
             //=====================================================================================================================================================
             #endregion
-            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            if (Keyboard.GetState().IsKeyDown(Keys.L))
                 return Gamestates.inGame;
 
             else

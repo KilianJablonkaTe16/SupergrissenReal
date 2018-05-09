@@ -40,7 +40,7 @@ namespace SpringandeGris
             whichTexture = texture;
             center = new Vector2(texture.Height / 2, texture.Width / 2);
             sonicJump = -19;
-            gravity = new Vector2(0, 0.5f);
+            gravity = new Vector2(0, 0.4f);
         }
 
         public Rectangle PlayerHitbox
@@ -108,7 +108,11 @@ namespace SpringandeGris
                 effect.Play();
                 
             }
-
+            
+            if (harhoppat == false)
+            {
+                velocity.Y = 0f;
+            }
             //if (harhoppat == true)
             //{
 
@@ -117,21 +121,16 @@ namespace SpringandeGris
 
             //}
 
-            if (harhoppat == false)
-            {
-
-                velocity.Y = 0f;
-            }
 
 
 
-           // Lägger till en "backe" så att bilden inte rör sig neråt ur bild.
-            if (position.Y >= 320)
-            {
-                position.Y = 320;
-                harhoppat = false;
+            // Lägger till en "backe" så att bilden inte rör sig neråt ur bild.
+            //if (position.Y >= 320)
+            //{
+            //    position.Y = 320;
+            //    harhoppat = false;
 
-            }
+            //}
 
 
 

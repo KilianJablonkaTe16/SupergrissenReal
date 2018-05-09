@@ -18,12 +18,12 @@ namespace SpringandeGris
         public Level1(Player  player)
         {
            
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 100; i++)
             {
 
-                Game1.Objekten.Add(new Block(Game1.objectSprite, new Vector2(player.position.X + Game1.rng.Next(100,10000), Game1.rng.Next(Convert.ToInt32(player.position.X) + player.PlayerHitbox.Height - 50, Convert.ToInt32(player.position.X) + player.PlayerHitbox.Height + 50))));
+                //Game1.Objekten.Add(new Block(Game1.objectSprite, new Vector2(player.position.X + Game1.rng.Next(100,10000), Game1.rng.Next(Convert.ToInt32(player.position.X) + player.PlayerHitbox.Height - 50, Convert.ToInt32(player.position.X) + player.PlayerHitbox.Height + 50))));
 
-                Game1.Objekten.Add(new DamageBlock(Game1.damagesprite, new Vector2(positionx, 424)));
+                Game1.Objekten.Add(new DamageBlock(Game1.damagesprite, new Vector2(positionx, 700)));
 
                 positionx += 200;
             }

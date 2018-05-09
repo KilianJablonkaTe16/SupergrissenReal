@@ -39,7 +39,7 @@ namespace SpringandeGris
 
 
                 player.harhoppat = false;
-                player.position.Y = ObjectHitbox.Location.Y - player.PlayerHitbox.Height;
+               
                 if (player.ärodödlig == false)
                 {
                     //Playern tar 1 damage
@@ -55,7 +55,7 @@ namespace SpringandeGris
             else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Down)
             {
 
-                player.position.Y = ObjectHitbox.Location.X + player.PlayerHitbox.Height;
+                 
                 if (player.ärodödlig == false)
                 {
                     //Playern tar 1 damage
@@ -66,7 +66,7 @@ namespace SpringandeGris
             else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Left)
             {
 
-                player.position.X = ObjectHitbox.Location.X - player.PlayerHitbox.Width;
+                
                 player.harhoppat = true;
                 //Playern tar 1 damage;
                 player.health--;
@@ -79,7 +79,7 @@ namespace SpringandeGris
             }
             else if (ObjectHitbox.Intersects(player.PlayerHitbox) && hitboxes == Hitboxes.Right)
             {
-                player.position.X = ObjectHitbox.Location.X + player.PlayerHitbox.Width;
+                
                 player.harhoppat = true;
                 player.health--;
                 if (player.ärodödlig == false)
